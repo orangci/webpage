@@ -1,4 +1,4 @@
-let repoOwner = 'orxngc';
+let repoOwner = 'orangci';
 let repoName = 'walls';
 let images = [];
 let currentIndex = 0;
@@ -36,21 +36,21 @@ function updateHeaderAndAside() {
     const repoInfo = document.getElementById('repo-info');
 
     if (repoName === 'walls') {
-        repoLink.textContent = 'orxngc/walls';
-        repoLink.href = 'https://github.com/orxngc/walls';
-        repoInfo.innerHTML = `<p> Yoh! This is my repository of wallpapers which I've collected over the years. A <a href="https://github.com/orxngc/walls-catppuccin-mocha">catppuccin-mocha</a> version is available here. </p>
+        repoLink.textContent = 'orangci/walls';
+        repoLink.href = 'https://github.com/orangci/walls';
+        repoInfo.innerHTML = `<p> Yoh! This is my repository of wallpapers which I've collected over the years. A <a href="https://github.com/orangci/walls-catppuccin-mocha">catppuccin-mocha</a> version is available here. </p>
         <p> <br>
         Disclaimer: These wallpapers are sourced from many, many, many sources on the internet. I did not make any of these, although I have edited several of them a little bit. No credit really goes to me in that regard, I'm just the collector.
         
-        <p> <br> Please <a href="https://github.com/orxngc/walls">star</a> the repository on Github if you like these.</p>`;
+        <p> <br> Please <a href="https://github.com/orangci/walls">star</a> the repository on Github if you like these.</p>`;
     } else {
-        repoLink.textContent = 'orxngc/walls-catppuccin-mocha';
-        repoLink.href = 'https://github.com/orxngc/walls-catppuccin-mocha';
-        repoInfo.innerHTML = `Yoh! This is my repository of wallpapers which I've collected over the years. This is the catppuccin-mocha version; the normal repo is available <a href="https://github.com/orxngc/walls">here</a>.
+        repoLink.textContent = 'orangci/walls-catppuccin-mocha';
+        repoLink.href = 'https://github.com/orangci/walls-catppuccin-mocha';
+        repoInfo.innerHTML = `Yoh! This is my repository of wallpapers which I've collected over the years. This is the catppuccin-mocha version; the normal repo is available <a href="https://github.com/orangci/walls">here</a>.
         <br>
-        Disclaimer: These wallpapers are sourced from many, many, many sources on the internet. I did not make any of these, although I have *edited* several of them a little bit and use lutgen to convert them from their normal versions in orxngc/walls to the catppuccin-mocha colour scheme. No credit really goes to me in that regard, I'm just the collector.
+        Disclaimer: These wallpapers are sourced from many, many, many sources on the internet. I did not make any of these, although I have *edited* several of them a little bit and use lutgen to convert them from their normal versions in orangci/walls to the catppuccin-mocha colour scheme. No credit really goes to me in that regard, I'm just the collector.
         
-        Please <a href="https://github.com/orxngc/walls-catppuccin-mocha">star</a> the repository on Github if you like these.`;
+        Please <a href="https://github.com/orangci/walls-catppuccin-mocha">star</a> the repository on Github if you like these.`;
     }
 }
 
