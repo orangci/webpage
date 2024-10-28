@@ -26,84 +26,84 @@
     <details> 
     <summary>Rofi</summary>
     
-    <img src="https://raw.githubusercontent.com/orxngc/dots/main/.github/bindings.png" alt="Bindings">
-    <img src="https://raw.githubusercontent.com/orxngc/dots/main/.github/application-launcher.png" alt="Application launcher">
-    <img src="https://raw.githubusercontent.com/orxngc/dots/main/.github/wallpaper-selector.png" alt="Wallpaper selector">
+    <img src="https://raw.githubusercontent.com/orangci/dots/main/.github/bindings.png" alt="Bindings">
+    <img src="https://raw.githubusercontent.com/orangci/dots/main/.github/application-launcher.png" alt="Application launcher">
+    <img src="https://raw.githubusercontent.com/orangci/dots/main/.github/wallpaper-selector.png" alt="Wallpaper selector">
     </details>
     
     <details>
     <summary>Hyprlock</summary>
     
-    <img src="https://raw.githubusercontent.com/orxngc/dots/main/.github/lockscreen-1.png" alt="Lockscreen 1">
-    <img src="https://raw.githubusercontent.com/orxngc/dots/main/.github/lockscreen-2.png" alt="Lockscreen 2">
+    <img src="https://raw.githubusercontent.com/orangci/dots/main/.github/lockscreen-1.png" alt="Lockscreen 1">
+    <img src="https://raw.githubusercontent.com/orangci/dots/main/.github/lockscreen-2.png" alt="Lockscreen 2">
     </details>
     
     <details> 
     <summary>Minecraft launcher</summary>
     
-    <img src="https://raw.githubusercontent.com/orxngc/dots/main/.github/minecraft-launcher.png" alt="Minecraft launcher">
+    <img src="https://raw.githubusercontent.com/orangci/dots/main/.github/minecraft-launcher.png" alt="Minecraft launcher">
     </details>
     
     <details> 
     <summary>ags &amp; thunar</summary>
     
-    <img src="https://raw.githubusercontent.com/orxngc/dots/main/.github/ags-thunar.png" alt="ags-thunar">
+    <img src="https://raw.githubusercontent.com/orangci/dots/main/.github/ags-thunar.png" alt="ags-thunar">
     </details>
     
     <details> 
     <summary>Discord</summary>
     
-    <img src="https://raw.githubusercontent.com/orxngc/dots/main/.github/discord.png" alt="Discord">
+    <img src="https://raw.githubusercontent.com/orangci/dots/main/.github/discord.png" alt="Discord">
     </details>
     
     <details> 
     <summary>nvim</summary>
     
-    <img src="https://raw.githubusercontent.com/orxngc/dots/main/.github/nvim.png" alt="nvim">
+    <img src="https://raw.githubusercontent.com/orangci/dots/main/.github/nvim.png" alt="nvim">
     </details>
     
     <details> 
     <summary>wlogout</summary>
     
-    <img src="https://raw.githubusercontent.com/orxngc/dots/main/.github/wlogout.png" alt="wlogout">
+    <img src="https://raw.githubusercontent.com/orangci/dots/main/.github/wlogout.png" alt="wlogout">
     </details>
     
     <details> 
     <summary>firefox &amp; nighttab</summary>
     
-    <img src="https://raw.githubusercontent.com/orxngc/dots/main/.github/firefox.png" alt="firefox">
+    <img src="https://raw.githubusercontent.com/orangci/dots/main/.github/firefox.png" alt="firefox">
     </details>
     
     <h2 id="installation">Installation</h2>
     <p>Run this command in your terminal and the script will handle the rest. Note that this won&#39;t work for non NixOS users. If the script breaks in anyway, please make an issue and notify me. It shouldn&#39;t, though.</p>
     <pre><code class="lang-sh">nix-<span class="hljs-keyword">shell</span> -<span class="hljs-keyword">p</span> curl # You can skip <span class="hljs-keyword">to</span> the <span class="hljs-keyword">next</span> <span class="hljs-built_in">line</span> <span class="hljs-keyword">if</span> you already have curl installed.
-    <span class="hljs-keyword">sh</span> &lt;(curl -L http<span class="hljs-variable">s:</span>//raw.githubusercontent.<span class="hljs-keyword">com</span>/orxngc/dots/main/install.<span class="hljs-keyword">sh</span>)
+    <span class="hljs-keyword">sh</span> &lt;(curl -L http<span class="hljs-variable">s:</span>//raw.githubusercontent.<span class="hljs-keyword">com</span>/orangci/dots/main/install.<span class="hljs-keyword">sh</span>)
     </code></pre>
-    <p>Note: I strongly advise you to read the code of the script <a href="github.com/orxngc/dots/blob/main/install.sh">here</a> before running it. Always read and thoroughly check scripts you see online for your own safety..!</p>
+    <p>Note: I strongly advise you to read the code of the script <a href="github.com/orangci/dots/blob/main/install.sh">here</a> before running it. Always read and thoroughly check scripts you see online for your own safety..!</p>
     <p>Press <code>SUPER + ?</code> to open a list of all keybindings.</p>
     <h2 id="structure-overview">Structure Overview</h2>
     <p>This is a very modular flake.</p>
     <ul>
-    <li><a href="https://raw.githubusercontent.com/orxngc/dots/main/.github"><code>.github</code></a> The assets files for the README.</li>
-    <li><a href="https://raw.githubusercontent.com/orxngc/dots/main/files"><code>files</code></a> Files which various home-manager modules utilize.<ul>
-    <li><a href="https://raw.githubusercontent.com/orxngc/dots/main/files/fonts"><code>fonts</code></a> This is where you can place fonts that are not available in nixpkgs.</li>
+    <li><a href="https://raw.githubusercontent.com/orangci/dots/main/.github"><code>.github</code></a> The assets files for the README.</li>
+    <li><a href="https://raw.githubusercontent.com/orangci/dots/main/files"><code>files</code></a> Files which various home-manager modules utilize.<ul>
+    <li><a href="https://raw.githubusercontent.com/orangci/dots/main/files/fonts"><code>fonts</code></a> This is where you can place fonts that are not available in nixpkgs.</li>
     </ul>
     </li>
-    <li><a href="https://raw.githubusercontent.com/orxngc/dots/main/hm-modules"><code>hm-modules</code></a> All home-manager modules are stored in here.<ul>
-    <li><a href="https://raw.githubusercontent.com/orxngc/dots/main/hm-modules/core"><code>core</code></a> Important things, like the hyprland module.</li>
-    <li><a href="https://raw.githubusercontent.com/orxngc/dots/main/hm-modules/programs"><code>programs</code></a> The majority of program modules.</li>
-    <li><a href="https://raw.githubusercontent.com/orxngc/dots/main/hm-modules/styles"><code>styles</code></a> Now this one you should touch. A big chunk of the system is themed here (the rest are themed in hm-modules/programs).</li>
+    <li><a href="https://raw.githubusercontent.com/orangci/dots/main/hm-modules"><code>hm-modules</code></a> All home-manager modules are stored in here.<ul>
+    <li><a href="https://raw.githubusercontent.com/orangci/dots/main/hm-modules/core"><code>core</code></a> Important things, like the hyprland module.</li>
+    <li><a href="https://raw.githubusercontent.com/orangci/dots/main/hm-modules/programs"><code>programs</code></a> The majority of program modules.</li>
+    <li><a href="https://raw.githubusercontent.com/orangci/dots/main/hm-modules/styles"><code>styles</code></a> Now this one you should touch. A big chunk of the system is themed here (the rest are themed in hm-modules/programs).</li>
     </ul>
     </li>
-    <li><a href="https://raw.githubusercontent.com/orxngc/dots/main/hosts"><code>hosts</code></a> This is where each host&#39;s unique configurations go. You can configure/toggle the different modules and hm-modules for each host here.</li>
-    <li><a href="https://raw.githubusercontent.com/orxngc/dots/main/modules"><code>modules</code></a> NixOS system modules.<ul>
-    <li><a href="https://raw.githubusercontent.com/orxngc/dots/main/modules/core"><code>core</code></a> There&#39;s no reason to touch this.</li>
-    <li><a href="https://raw.githubusercontent.com/orxngc/dots/main/modules/core"><code>drivers</code></a> Again, no reason to touch these.</li>
-    <li><a href="https://raw.githubusercontent.com/orxngc/dots/main/modules/programs"><code>programs</code></a> Honestly not a reason to touch these either.</li>
+    <li><a href="https://raw.githubusercontent.com/orangci/dots/main/hosts"><code>hosts</code></a> This is where each host&#39;s unique configurations go. You can configure/toggle the different modules and hm-modules for each host here.</li>
+    <li><a href="https://raw.githubusercontent.com/orangci/dots/main/modules"><code>modules</code></a> NixOS system modules.<ul>
+    <li><a href="https://raw.githubusercontent.com/orangci/dots/main/modules/core"><code>core</code></a> There&#39;s no reason to touch this.</li>
+    <li><a href="https://raw.githubusercontent.com/orangci/dots/main/modules/core"><code>drivers</code></a> Again, no reason to touch these.</li>
+    <li><a href="https://raw.githubusercontent.com/orangci/dots/main/modules/programs"><code>programs</code></a> Honestly not a reason to touch these either.</li>
     </ul>
     </li>
-    <li><a href="https://raw.githubusercontent.com/orxngc/dots/main/scripts"><code>scripts</code></a> This is where I store all my scripts.</li>
-    <li><a href="https://raw.githubusercontent.com/orxngc/dots/main/flake.nix"><code>flake.nix</code></a> Where the flake begins, the lovely starting pont.</li>
+    <li><a href="https://raw.githubusercontent.com/orangci/dots/main/scripts"><code>scripts</code></a> This is where I store all my scripts.</li>
+    <li><a href="https://raw.githubusercontent.com/orangci/dots/main/flake.nix"><code>flake.nix</code></a> Where the flake begins, the lovely starting pont.</li>
     </ul>
     <h2 id="programs">Programs</h2>
     <details>
