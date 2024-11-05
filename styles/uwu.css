@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* orangc's catppuccin CSS framework */
 @import url(https://fonts.bunny.net/css?family=raleway:400);
 @import url(./gradients.css);
@@ -285,9 +289,7 @@ aside {
 
 .button {
   background: var(--surface0);
-  /* background: linear-gradient(to top right, var(--surface1) 0%, var(--mantle) 100%); */
   color: var(--text);
-  /* outline: var(--text) 1px solid; */
   padding: 0.5rem;
   margin: 0.5rem;
   border-radius: 15px;
@@ -297,7 +299,6 @@ aside {
 .button:hover {
   background: var(--surface1);
   color: var(--text);
-  /* outline: var(--text) 1px solid; */
   padding: 0.5rem;
   margin: 0.5rem;
   border-radius: 15px;

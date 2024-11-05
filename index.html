@@ -12,13 +12,6 @@
   <meta property="og:description" content="orangc's personal homepage. A cozy little corner of the 'net." />
   <meta name="theme-color" content="#FFAA00" />
   <title>orangc</title>
-
-
-  <link rel="stylesheet" href="./styles/dc-status.css">
-  <script src="./scripts/dc-status/lanyard.js"></script>
-  <script src="./scripts/dc-status/config.js"></script>
-  <script src="./scripts/dc-status/init.js"></script>
-
   
   <link rel="shortcut icon" href="leaf.ico" type="image/x-icon" />
   <script src="https://kit.fontawesome.com/c67ad27611.js" crossorigin="anonymous"></script>
@@ -95,7 +88,7 @@
     <!-- About Me -->
     <section class="card">
       <article>
-        <h2 class="ug-blue">about</h2>
+        <h2 class="ug-blue" id="about">about</h2>
         <p>
           Hi friends. <img src="https://cdn.discordapp.com/emojis/1199591591044726825.webp?size=20&quality=lossless" alt="emoji" /> I'm a student doode based in Riyadh. I tinker with code a great deal. <a href="nohello" class="link ug-peach">Feel free to message me anytime</a>, but note that I'm not the fastest when it comes to replies. I respond fastest on Discord, email, and Github. I use NixOS btw <img src="https://cdn.discordapp.com/emojis/1281979646602252372.webp?size=20&quality=lossless" alt="emoji" />
         </p>
@@ -105,7 +98,7 @@
     <!-- Projects -->
     <section class="card">
       <article>
-        <h2 class="ug-green">projects</h2>
+        <h2 class="ug-green" id="projects">projects</h2>
         <ul>
           <li><a href="./takina" class="link ug-peach">takina</a>, a discord bot written in python with nextcord</li>
           <li>my NixOS + Hyprland <a href="https://github.com/orangci/dots" class="link ug-peach">flake</a></li>
@@ -124,11 +117,30 @@
     </section>
 
     <!-- Discord status -->
-    <section class="card"> <img src="https://lanyard-profile-readme.vercel.app/api/961063229168164864?theme=dark&bg=181825&animated=true&hideDiscrim=true&borderRadius=15px&idleMessage=chilling?hideActivity=whenNotUsed" alt="Discord status." style="display: block; margin: 20px auto; max-width: 100%; height: auto;" /></section>
+    <!-- <section class="card"> <img src="https://lanyard-profile-readme.vercel.app/api/961063229168164864?theme=dark&bg=181825&animated=true&hideDiscrim=true&borderRadius=15px&idleMessage=chilling?hideActivity=whenNotUsed" alt="Discord status." style="display: block; margin: 20px auto; max-width: 100%; height: auto;" /></section> -->
+    
+    <!-- Skills -->
+    <section class="card">
+      <article>
+        <h2 class="ug-pink" id="skills">skills</h2>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" width="64px" height="64px"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nixos/nixos-original.svg" width="64px" height="64px"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/neovim/neovim-original.svg" width="64px" height="64px"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg" width="64px" height="64px"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" width="64px" height="64px"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" width="64px" height="64px"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="64px" height="64px"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="64px" height="64px"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="64px" height="64px"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original-wordmark.svg" width="64px" height="64px"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" width="64px" height="64px"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" width="64px" height="64px"/>
+      </article>
+    </section>
   
     <!-- nixwebring -->
     <section class="card">
-      <h2><a href="https://nixwebr.ing/prev/orangc" class="ug-sky">«</a> <a href="http://nixwebr.ing" class="link ug-sky">nixwebring</a> <a href="http://nixwebr.ing/rand">🎲</a> <a href="https://nixwebr.ing/next/orangc" class="ug-sky">»</a></h2>
+      <h2 id="nixwebring"><a href="https://nixwebr.ing/prev/orangc" class="ug-sky">«</a> <a href="http://nixwebr.ing" class="link ug-sky">nixwebring</a> <a href="http://nixwebr.ing/rand">🎲</a> <a href="https://nixwebr.ing/next/orangc" class="ug-sky">»</a></h2>
     </section>
 
   <!-- External JS -->
