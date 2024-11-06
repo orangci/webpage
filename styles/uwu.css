@@ -578,6 +578,10 @@ video {
   float: left;
 }
 
+.m-3 {
+  margin: 0.75rem;
+}
+
 .mx-1 {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
@@ -605,9 +609,27 @@ video {
   display: inline-flex;
 }
 
+.size-10 {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
 .size-12 {
   width: 3rem;
   height: 3rem;
+}
+
+.size-8 {
+  width: 2rem;
+  height: 2rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .w-full {
@@ -663,6 +685,10 @@ video {
   padding: 1.25rem;
 }
 
+.p-4 {
+  padding: 1rem;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -675,6 +701,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.align-baseline {
+  vertical-align: baseline;
 }
 
 .align-middle {
@@ -993,6 +1023,11 @@ ul {
   text-align: left;
 }
 
+hr {
+  --tw-border-opacity: 1;
+  border-color: rgb(166 173 200 / var(--tw-border-opacity));
+}
+
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -1071,6 +1106,7 @@ h6 {
 }
 
 .card {
+  margin: 0.5rem;
   width: 100%;
   border-radius: 1rem;
   --tw-bg-opacity: 1;
@@ -1165,6 +1201,10 @@ h6 {
     margin-left: 6rem;
     margin-right: 6rem;
   }
+
+  .md\:w-1\/2 {
+    width: 50%;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1176,5 +1216,13 @@ h6 {
   .lg\:mx-96 {
     margin-left: 24rem;
     margin-right: 24rem;
+  }
+
+  .lg\:ml-4 {
+    margin-left: 1rem;
+  }
+
+  .lg\:w-full {
+    width: 100%;
   }
 }
