@@ -578,10 +578,6 @@ video {
   float: left;
 }
 
-.m-3 {
-  margin: 0.75rem;
-}
-
 .mx-1 {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
@@ -609,11 +605,6 @@ video {
   display: inline-flex;
 }
 
-.size-10 {
-  width: 2.5rem;
-  height: 2.5rem;
-}
-
 .size-12 {
   width: 3rem;
   height: 3rem;
@@ -622,14 +613,6 @@ video {
 .size-8 {
   width: 2rem;
   height: 2rem;
-}
-
-.h-full {
-  height: 100%;
-}
-
-.w-1\/2 {
-  width: 50%;
 }
 
 .w-full {
@@ -685,10 +668,6 @@ video {
   padding: 1.25rem;
 }
 
-.p-4 {
-  padding: 1rem;
-}
-
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -703,10 +682,6 @@ video {
   text-align: center;
 }
 
-.align-baseline {
-  vertical-align: baseline;
-}
-
 .align-middle {
   vertical-align: middle;
 }
@@ -714,61 +689,6 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-.text-cblue {
-  --tw-text-opacity: 1;
-  color: rgb(137 180 250 / var(--tw-text-opacity));
-}
-
-.text-cgreen {
-  --tw-text-opacity: 1;
-  color: rgb(166 227 161 / var(--tw-text-opacity));
-}
-
-.text-clavender {
-  --tw-text-opacity: 1;
-  color: rgb(180 190 254 / var(--tw-text-opacity));
-}
-
-.text-cmaroon {
-  --tw-text-opacity: 1;
-  color: rgb(235 160 172 / var(--tw-text-opacity));
-}
-
-.text-cmauve {
-  --tw-text-opacity: 1;
-  color: rgb(203 166 247 / var(--tw-text-opacity));
-}
-
-.text-cpeach {
-  --tw-text-opacity: 1;
-  color: rgb(250 179 135 / var(--tw-text-opacity));
-}
-
-.text-cred {
-  --tw-text-opacity: 1;
-  color: rgb(243 139 168 / var(--tw-text-opacity));
-}
-
-.text-csapphire {
-  --tw-text-opacity: 1;
-  color: rgb(116 199 236 / var(--tw-text-opacity));
-}
-
-.text-csky {
-  --tw-text-opacity: 1;
-  color: rgb(137 220 235 / var(--tw-text-opacity));
-}
-
-.text-cyellow {
-  --tw-text-opacity: 1;
-  color: rgb(249 226 175 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1201,10 +1121,6 @@ h6 {
     margin-left: 6rem;
     margin-right: 6rem;
   }
-
-  .md\:w-1\/2 {
-    width: 50%;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -1216,13 +1132,5 @@ h6 {
   .lg\:mx-96 {
     margin-left: 24rem;
     margin-right: 24rem;
-  }
-
-  .lg\:ml-4 {
-    margin-left: 1rem;
-  }
-
-  .lg\:w-full {
-    width: 100%;
   }
 }
