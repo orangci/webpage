@@ -107,7 +107,7 @@
 }
 
 /*
-! tailwindcss v3.4.13 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.14 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -550,7 +550,7 @@ video {
 
 /* Make elements with the HTML hidden attribute stay hidden by default */
 
-[hidden] {
+[hidden]:where(:not([hidden="until-found"])) {
   display: none;
 }
 
@@ -695,6 +695,19 @@ video {
   border-width: 1px;
 }
 
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
+.border-t-2 {
+  border-top-width: 2px;
+}
+
+.border-cmauve {
+  --tw-border-opacity: 1;
+  border-color: rgb(203 166 247 / var(--tw-border-opacity));
+}
+
 .bg-cmantle {
   --tw-bg-opacity: 1;
   background-color: rgb(24 24 37 / var(--tw-bg-opacity));
@@ -714,6 +727,11 @@ video {
   padding-bottom: 0.25rem;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .pl-0 {
   padding-left: 0px;
 }
@@ -730,17 +748,23 @@ video {
   vertical-align: middle;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
 
-.capitalize {
-  text-transform: capitalize;
-}
-
 .italic {
   font-style: italic;
+}
+
+.text-\[\#5865F2\] {
+  --tw-text-opacity: 1;
+  color: rgb(88 101 242 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1037,37 +1061,43 @@ hr {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 h1 {
-  padding: 0.25rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
   font-size: 3rem;
   line-height: 1;
 }
 
 h2 {
-  padding: 0.25rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
 
 h3 {
-  padding: 0.25rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
 
 h4 {
-  padding: 0.25rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
   font-size: 1.5rem;
   line-height: 2rem;
 }
 
 h5 {
-  padding: 0.25rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
   font-size: 1.5rem;
   line-height: 2rem;
 }
 
 h6 {
-  padding: 0.25rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
