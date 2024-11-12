@@ -55,6 +55,7 @@ hr { @apply border-csubtext0; }
   @apply absolute bottom-0 left-0 w-0 h-[2px] bg-cpeach transition-all duration-300;
 }
 .link:hover::after { @apply w-full; }
+.link2 { @apply inline-block relative underline decoration-cpeach decoration-2 hover:no-underline; }
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

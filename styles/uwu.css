@@ -748,11 +748,6 @@ video {
   vertical-align: middle;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -1055,6 +1050,18 @@ hr {
 
 .link:hover::after {
   width: 100%;
+}
+
+.link2 {
+  position: relative;
+  display: inline-block;
+  text-decoration-line: underline;
+  text-decoration-color: #fab387;
+  text-decoration-thickness: 2px;
+}
+
+.link2:hover {
+  text-decoration-line: none;
 }
 
 /* Typography
