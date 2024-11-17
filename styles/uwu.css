@@ -1214,6 +1214,16 @@ h6 {
   background-image: linear-gradient(to top right, #fab387, #FE640B);
 }
 
+/* Unhide on hover */
+
+.uoh-content {
+  display: none;
+}
+
+.uoh-trigger:hover + .uoh-content {
+  display: block;
+}
+
 @media (min-width: 640px) {
   .sm\:w-full {
     width: 100%;
@@ -1232,4 +1242,4 @@ h6 {
     margin-left: 14rem;
     margin-right: 14rem;
   }
-}
+} 

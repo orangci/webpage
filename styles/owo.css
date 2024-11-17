@@ -80,3 +80,7 @@ h6 { @apply py-1 text-xl; }
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .btnp { @apply p-2 rounded-2xl bg-cpeach text-ccrust hover:bg-ug-peach; }
+
+/* Unhide on hover */
+.uoh-content { @apply hidden; } 
+.uoh-trigger:hover + .uoh-content { @apply block; } 
