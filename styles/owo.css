@@ -87,7 +87,7 @@ h6 { @apply py-1 text-xl; }
 
 /* Animations
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.anim-enlarge { @apply transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110; }
+.anim-enlarge { @apply transition ease-in-out delay-75 hover:scale-110; }
 
 
 /* Lists
