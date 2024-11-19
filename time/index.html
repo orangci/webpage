@@ -58,7 +58,7 @@
                     const direction = isAhead ? "ahead of" : "behind";
 
                     timezoneElement.innerHTML = `
-                        ${greeting}, your timezone is <span class="text-cmauve">UTC${userOffsetHours >= 0 ? '+' : ''}${userOffsetHours}</span>, which is <span class="text-cred">${Math.abs(diffHours)}</span> hours ${direction} my timezone.
+                        ${greeting}, your timezone is <span class="text-cmauve">UTC${userOffsetHours >= 0 ? '+' : ''}${userOffsetHours}</span>, which is <span class="text-cred">${Math.abs(diffHours)}</span> hours ${direction} my timezone. <br> The above time is the current time in Riyadh, Saudi Arabia, where I live.
                     `;
                 }
             }
