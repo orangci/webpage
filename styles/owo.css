@@ -42,10 +42,10 @@ i, em { @apply italic; }
 code { @apply p-1 m-1 font-mono rounded-lg bg-ccrust; }
 aside {@apply text-sm text-csubtext1; }
 img { @apply select-none; }
-ol { @apply list-inside text-left list-roman; }
-ul { @apply list-disc list-inside text-left; }
-ul ul, ul ol, ol ul, ol ol { @apply pl-8; }
 hr { @apply border-csubtext0; }
+p { @apply inline; }
+fieldset { @apply p-3 rounded-lg border-2 border-cmauve; }
+legend { @apply px-1; }
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -83,9 +83,16 @@ h6 { @apply py-1 text-xl; }
 
 /* Unhide On Hover
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.uoh-content { @apply hidden; } 
-.uoh-trigger:hover + .uoh-content { @apply block; } 
+/* to be done later */
 
 /* Animations
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .anim-enlarge { @apply transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110; }
+
+
+/* Lists
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ol { @apply list-inside text-left list-roman; }
+ul { @apply list-disc list-inside text-left; }
+ul ul, ul ol, ol ul, ol ol { @apply pl-8; }
+li * { @apply inline; }

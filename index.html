@@ -70,19 +70,18 @@
 
   <!-- About Me -->
   <section class="py-5 mx-auto">
-    <article>
+    <article class="leading-relaxed">
       <h2 class="ug-red" id="about">about</h2>
-      <p>
-        Hi friends! I'm a student developer fellow based in Riyadh. <a href="nohello" class="link2">Feel free to
-          message me anytime</a>, I respond fastest on the social links above, ranked left to right from fastest
-        responses to slowest.</p>
-      <p>English is my mother tongue, and I speak (MSA) Arabic decently enough; I've been learning it for the past two
-        years.</p>
-      <p>I am interested in software development, food of any kind as long as it's good, Swiss army knives, good books,
-        weeb stuffs, history, peach Lipton iced tea, and a whole array of other things.</p>
-      </p>
-      <p>I am also an enthusiast about anything FOSS; most notably NixOS. My preferred programming language is Python.
-      </p>
+        <p id="greetingMessage"></p>! I'm a student developer fellow based in Riyadh. <a href="nohello" class="link2">Feel free to message me anytime</a>, I respond fastest on Discord.
+        <br>
+        Here's several random bits about myself:
+        <ul>
+          <li>English is my mother tongue, and I speak (MSA) Arabic <abbr title="I've been learning it for the past two years, so I'd hope so!">decently enough.</abbr></li>
+          <li>I know Python and Nix and intend on learning other languages. <em>I don't count these as programming languages</em> but I do know HTML, CSS (I use <a href="https://tailwindcss.com" class="link2">Tailwind</a> these days), and bash. I've also been using Linux (<a href="https://nixos.org" class="link2">NixOS</a>) since 2023.</li>
+          <li>I use 24 hour clock time. I'm weird, yes. My timezone is UTC+3/AST — it's <time id="myCurrentTime"></time> for me at the moment.</li>
+          <li>I am currently a white belt in <abbr title="A Japanese martial art.">aikido</abbr>. I'm slowly improving.</li>
+          <li>I am fond of reading, both fiction and non-fiction. The longest book I've read is the <a class="italic link2" href="https://en.wikipedia.org/wiki/The_History_of_the_Decline_and_Fall_of_the_Roman_Empire">Decline and Fall of the Roman Empire</a>, and my favourite is <a class="italic link2" href="https://en.wikipedia.org/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy_(novel)">The Hitchhiker's Guide to the Galaxy</a>.</li>
+        </ul>
     </article>
   </section>
 
@@ -132,7 +131,7 @@
             </li>
       
             <!-- part-of.my.id -->
-            <li><strong class="ug-maroon">Maintainer</strong> <span>at</span> <a class="link ug-sky"
+            <li><strong class="ug-maroon">Maintainer</strong> <span>at</span> <a class="link2 ug-sky"
                 href="https://part-of.my.id">part-of.my.id</a>
               <i class="fas fa-arrow-right"></i>
               <a href="https://discord.gg/NyZ5FvKv8F"><i class="hover:text-cpeach fab fa-discord text-[#5865F2]"></i></a>
@@ -192,6 +191,8 @@
 
   <!-- Scripts -->
   <script src="scripts/touhou.js"></script>
+  <script src="scripts/current-time.js"></script>
+  <script src="scripts/greeting-message.js"></script>
   <script src="https://kit.fontawesome.com/d18c7751b3.js" crossorigin="anonymous"></script>
 </body>
 
