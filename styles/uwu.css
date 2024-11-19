@@ -725,10 +725,6 @@ video {
   border-width: 1px;
 }
 
-.border-0 {
-  border-width: 0px;
-}
-
 .border-b-2 {
   border-bottom-width: 2px;
 }
@@ -1303,6 +1299,7 @@ h6 {
   position: absolute;
   bottom: 100%;
   left: 50%;
+  margin-bottom: 0.5rem;
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   border-radius: 0.5rem;
