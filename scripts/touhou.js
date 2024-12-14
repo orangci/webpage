@@ -7,7 +7,10 @@ document.addEventListener("DOMContentLoaded", () => {
         "Do any creatures outside of humans even have 10 fingers?",
         "Come back two hours earlier.",
         "Your time is mine...",
-        "The moon tonight is red. You will know death."
+        "The moon tonight is red. You will know death.",
+        "That was a pointless encounter with a pointless person.",
+        "Unfortunately, I'm pretty good at dodging.",
+        "Oh, is that so..."
     ];
     
     function displayRandomQuote() {
