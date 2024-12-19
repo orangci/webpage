@@ -1334,7 +1334,10 @@ h6 {
 }
 
 .btnp:hover {
-  background-image: linear-gradient(to top right, #fab387, #FE640B);
+  --tw-bg-opacity: 1;
+  background-color: rgb(49 50 68 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(205 214 244 / var(--tw-text-opacity, 1));
 }
 
 /* Unhide On Hover
