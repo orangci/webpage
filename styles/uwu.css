@@ -706,6 +706,22 @@ video {
   align-self: center;
 }
 
+.whitespace-normal {
+  white-space: normal;
+}
+
+.whitespace-pre-line {
+  white-space: pre-line;
+}
+
+.whitespace-pre-wrap {
+  white-space: pre-wrap;
+}
+
+.text-wrap {
+  text-wrap: wrap;
+}
+
 .rounded-2xl {
   border-radius: 1rem;
 }
