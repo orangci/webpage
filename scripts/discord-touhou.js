@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     async function fetchDiscordStatus() {
         try {
             const response = await fetch(`https://api.lanyard.rest/v1/users/${userId}`);
-            if (!response.ok) throw new Error("Failed to fetch status");
+            if (!response.ok) throw new Error("Failed to fetch status: either orangc is offline or the lanyard API is down");
 
             const data = await response.json();
             const activities = data?.data?.activities || [];
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 document.getElementById(elementId).innerText = customStatus;
             }
         } catch (error) {
-            console.error("Error fetching Discord custom status:", error);
+            console.error("Error fetching Discord status:", error);
         }
     }
 
