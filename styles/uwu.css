@@ -107,7 +107,7 @@
 }
 
 /*
-! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -877,6 +877,21 @@ video {
 
 .text-transparent {
   color: transparent;
+}
+
+.text-clavender {
+  --tw-text-opacity: 1;
+  color: rgb(180 190 254 / var(--tw-text-opacity, 1));
+}
+
+.text-cmaroon {
+  --tw-text-opacity: 1;
+  color: rgb(235 160 172 / var(--tw-text-opacity, 1));
+}
+
+.text-csky {
+  --tw-text-opacity: 1;
+  color: rgb(137 220 235 / var(--tw-text-opacity, 1));
 }
 
 .underline {
