@@ -27,7 +27,7 @@
                     <span class="text-3xl align-middle ug-peach">Takina</span>
                 </div>
                 <i><aside class="text-center">Fun fact: Takina is named after <a href="https://myanimelist.net/character/204620/Takina_Inoue">Takina Inoue</a> from <a href="https://myanimelist.net/anime/50709/Lycoris_Recoil">Lycoris Recoil</a>.</aside></i>
-                <p class="block text-center">A simple multipurpose bot for Discord written in Python with the Nextcord library. You can invite Takina <a href="https://discord.com/oauth3/authorize?client_id=1287074090783604797" class="link2">here</a>.</p>
+                <p class="block text-center">A simple multipurpose bot for Discord written in Python with the Nextcord library. You can join our Discord server <a href="https://discord.gg/a4Wa2Z6Jv2" class="link2"> here</a>.</p>
                 <br>
                 <div class="text-sm text-center sm:text-base">
                     <a href="https://discord.com/oauth2/authorize?client_id=1287074090783604797" class="btnp">Invite Takina</a>
@@ -61,6 +61,10 @@
                     <details>
                         <summary class="u-ns">Seasonal anime</summary>
                         <p>Usage: <code>.season Summer 2022</code>.</p>
+                    </details>
+                    <details>
+                        <summary class="u-ns">Anime/manga synopsis commands</summary>
+                        <p>Usage: <code>.anisyn Lycoris Recoil</code> and <code>.mangasyn Lycoris Recoil</code>.</p>
                     </details>
             </section>
 
@@ -131,11 +135,12 @@
                     <details>
                         <summary class="u-ns">Message purging</summary>
                         <p>Usage: <code>.purge 42</code>.</p>
-                        <p>The maximum number of messages you can purge is 100.</p>
+                        <p>The maximum number of messages you can purge is 100. You can also purge a specific user with <code>purge user orangc 11</code> or bots with <code>purge bots 17</code>.</p>
                     </details>
                     <details>
-                        <summary class="u-ns">Logging and casing system</summary>
-                        <p>Logs bans/unbans, mutes/unmutes, and kicks. If a modlog channel is set with <code>/modlog channel</code>. Also <code>.case caseID</code>, <code>.cases user</code>, and <code>modstats user</code>.</p>
+                        <summary class="u-ns">Logging, casing, and moderation statistics system</summary>
+                        <p>Logs bans/unbans, mutes/unmutes, and kicks. If a modlog channel is set with <code>/modlog channel</code>.
+                        Also <code>.case caseID</code>, <code>.cases user</code>, <code>.modcases user</code>, and <code>modstats user</code>.</p>
                     </details>
             </section>
 
@@ -187,6 +192,11 @@
                         <p>Usage: <code>.snipe</code>.</p>
                         <p>This snipes and sends the last deleted message in the channel.</p>
                     </details>
+                    <details>
+                        <summary class="u-ns">Dictionary</summary>
+                        <p>Usage: <code>.define grass</code>.</p>
+                        <p>This provides the dictionary definition for any word you query.</p>
+                    </details>
             </section>
     
             <section class="card">
@@ -216,6 +226,11 @@
                         <summary class="u-ns">Skin Fetcher</summary>
                         <p>Usage: <code>mcskin orangci</code>.</p>
                         <p>Fetches and displays a Minecraft user's skin.</p>
+                    </details>
+                    <details>
+                        <summary class="u-ns">Wynncraft module</summary>
+                        <p>Usage: <code>wynn player orangci</code> or <code>wynn guild Lawful Good</code>.</p>
+                        <p>Fetches and displays information about a Wynncraft player or guild in a neat little embed.</p>
                     </details>
             </section>
        </section>

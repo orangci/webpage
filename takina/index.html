@@ -17,229 +17,239 @@
     <link rel="stylesheet" href="../styles/uwu.css" />
 </head>
 
-<body>
-    <section>
+<body class="max-w-6xl sm:mx-auto">
 
-       <section class="flex justify-center cards">
-            <header class="p-5 w-full rounded-2xl sm:w-full md:mx-28 lg:mx-[12.75rem] bg-cmantle">
-                <div class="flex justify-center my-2">
-                    <img src="https://cdn.discordapp.com/avatars/1287074090783604797/74b52e03b8de639d95262a885b94ae98.webp?size=60" alt="takina's avatar" id="avatar" class="mx-4 rounded-full size-12">
-                    <span class="text-3xl align-middle ug-peach">Takina</span>
-                </div>
-                <i><aside class="text-center">Fun fact: Takina is named after <a href="https://myanimelist.net/character/204620/Takina_Inoue">Takina Inoue</a> from <a href="https://myanimelist.net/anime/50709/Lycoris_Recoil">Lycoris Recoil</a>.</aside></i>
-                <p class="block text-center">A simple multipurpose bot for Discord written in Python with the Nextcord library. You can join our Discord server <a href="https://discord.gg/a4Wa2Z6Jv2" class="link2"> here</a>.</p>
-                <br>
-                <div class="text-sm text-center sm:text-base">
-                    <a href="https://discord.com/oauth2/authorize?client_id=1287074090783604797" class="btnp">Invite Takina</a>
-                    <a href="http://github.com/orangci/takina" class="btnp">View Source Code</a>
-                </div>
-            </header>
-
-            <section class="card">
-                <h3 class="ug-red" id="weeb-utils">Weeb Utilities</h3>
-                <i><aside>Takina uses the <a href="https://jikan.moe/"> Jikan</a> API for this module.</aside></i>
-                    <details>
-                        <summary class="u-ns">Anime searching</summary>
-                        <p>Usage: <code>.anime Lycoris Recoil</code>.</p>
-                    </details>
-                    <details>
-                        <summary class="u-ns">Manga searching</summary>
-                        <p>Usage: <code>.manga Lycoris Recoil</code>.</p>
-                    </details>
-                    <details>
-                        <summary class="u-ns">Character searching</summary>
-                        <p>Usage: <code>.chr Takina Inoue</code>.</p>
-                    </details>
-                    <details>
-                        <summary class="u-ns">MyAnimeList user profiles</summary>
-                        <p>Usage: <code>.mal orangc</code>.</p>
-                    </details>
-                    <details>
-                        <summary class="u-ns">MyAnimeList user statistics</summary>
-                        <p>Usage: <code>.malstats anime orangc</code> or <code>.malstats manga orangc</code>.</p>
-                    </details>
-                    <details>
-                        <summary class="u-ns">Seasonal anime</summary>
-                        <p>Usage: <code>.season Summer 2022</code>.</p>
-                    </details>
-                    <details>
-                        <summary class="u-ns">Anime/manga synopsis commands</summary>
-                        <p>Usage: <code>.anisyn Lycoris Recoil</code> and <code>.mangasyn Lycoris Recoil</code>.</p>
-                    </details>
-            </section>
-
-            <section class="card">
-                <h3 class="ug-peach" id="utility">Utility</h3>
-                    <details>
-                        <summary class="u-ns">Giveaway module</summary>
-                        <p>Usage: <code>/giveaway</code>.</p>
-                        <p>An intuitive and simple to use module for managing giveaways.</p>
-                    </details>
-                    <details>
-                        <summary class="u-ns">Embed builder</summary>
-                        <p>Usage: <code>/embed</code>.</p>
-                    </details>
-                    <details>
-                        <summary class="u-ns">Remindme module</summary>
-                        <p>Usage: <code>remindme 10m watch lycoris recoil</code>.</p>
-                    </details>
-                    <details>
-                        <summary class="u-ns">Role management</summary>
-                        <p>Usage: <code>.role add role user</code>, <code>.role remove role user</code>.</p>
-                    </details>
-                    <details>
-                        <summary class="u-ns">Channel management</summary>
-                        <p>Usage: <code>.slowmode seconds/minutes/hours</code>, <code>.lock</code>, <code>.unlock</code>.</p>
-                    </details>
-                    <details>
-                        <summary class="u-ns">Information module</summary>
-                        <p>Usage: <code>.userinfo user</code>, <code>.serverinfo</code>, <code>.roleinfo role</code>.</p>
-                    </details>
-                    <details>
-                        <summary class="u-ns">Guild member count and user join positions</summary>
-                        <p>Usage: <code>.mc</code>, <code>.jp user</code>.</p>
-                    </details>
-                    <details>
-                        <summary class="u-ns">AFK module</summary>
-                        <p>Usage: <code>.afk reason</code>.</p>
-                    </details>
-            </section>
-
-            <section class="card">
-                <h3 class="ug-yellow" id="moderation">Moderation</h3>
-                    <details>
-                        <summary class="u-ns">Reports system</summary>
-                        <p>Usage: <code>/report user reason</code>.</p>
-                        <p>This module will only work if a reports channel is set with <code>/admin_report</code>.</p>
-                    </details>
-                    <details>
-                        <summary class="u-ns">Ban/unban</summary>
-                        <p>Usage: <code>.ban user</code>, <code>.unban user_id</code>.</p>
-                    </details>
-                    <details>
-                        <summary class="u-ns">Mute/unmute</summary>
-                        <p>Usage: <code>.mute user duration reason</code>, <code>.unmute user reason</code>.</p>
-                    </details>
-                    <details>
-                        <summary class="u-ns">Warnings</summary>
-                        <p>Usage: <code>.warn user reason</code>.</p>
-                    </details>
-                    <details>
-                        <summary class="u-ns">Kick</summary>
-                        <p>Usage: <code>.kick user reason</code>.</p>
-                    </details>
-                    <details>
-                        <summary class="u-ns">Nickname changing</summary>
-                        <p>Usage: <code>.setnick user new_nickname</code>.</p>
-                    </details>
-                    <details>
-                        <summary class="u-ns">Message purging</summary>
-                        <p>Usage: <code>.purge 42</code>.</p>
-                        <p>The maximum number of messages you can purge is 100. You can also purge a specific user with <code>purge user orangc 11</code> or bots with <code>purge bots 17</code>.</p>
-                    </details>
-                    <details>
-                        <summary class="u-ns">Logging and casing system</summary>
-                        <p>Logs bans/unbans, mutes/unmutes, and kicks. If a modlog channel is set with <code>/modlog channel</code>. Also <code>.case caseID</code>, <code>.cases user</code>, and <code>modstats user</code>.</p>
-                    </details>
-            </section>
-
-            <section class="card">
-                <h3 class="ug-green" id="fun">Fun</h3>
-                    <details>
-                        <summary class="u-ns">Random fact fetching</summary>
-                        <i><aside>Takina uses the <a href="https://uselessfacts.jsph.pl/api/v2/facts/random">uselessfacts</a> API for this.</aside></i>
-                        <p>Usage: <code>.fact</code>.</p>
-                    </details>
-                    <details>
-                        <summary class="u-ns">Random joke</summary>
-                        <i><aside>Takina uses both the <a href="https://icanhazdadjoke.com">icanhazdadjoke</a> API and <a href="http://jokeapi.dev">jokeapi</a> for this.</aside></i>
-                        <p>Usage: <code>.joke</code>.</p>
-                    </details>
-                    <details>
-                        <summary class="u-ns">User avatar fetching</summary>
-                        <p>Usage: <code>.avatar user</code>.</p>
-                    </details>
-                    <details>
-                        <summary class="u-ns">Nekos</summary>
-                        <i><aside>Takina uses the <a href="https://nekos.best/">nekos.best</a> API for theses.</aside></i>
-                        <p>Usage: <code>.hug</code>, <code>.shrug</code>, <code>.bonk</code>, <code>.yeet</code>, and many more.</p>
-                    </details>
-                    <details>
-                        <summary class="u-ns">Google</summary>
-                        <p>Usage: <code>.google search_term</code>.</p>
-                    </details>
-                    <details>
-                        <summary class="u-ns">Roll</summary>
-                        <p>Usage: <code>.roll</code>.</p>
-                        <p>This will roll a random number between 1-100.</p>
-                    </details>
-                    <details>
-                        <summary class="u-ns">Topic</summary>
-                        <i><aside>The topics for this were taken from YAGPDB.</aside></i>
-                        <p>Usage: <code>.topic</code>.</p>
-                    </details>
-                    <details>
-                        <summary class="u-ns">Urban dictionary searching</summary>
-                        <p>Usage: <code>.ubdict term</code>.</p>
-                    </details>
-                    <details>
-                        <summary class="u-ns">8ball</summary>
-                        <p>Usage: <code>.8ball question</code>.</p>
-                    </details>
-                    <details>
-                        <summary class="u-ns">Snipe</summary>
-                        <p>Usage: <code>.snipe</code>.</p>
-                        <p>This snipes and sends the last deleted message in the channel.</p>
-                    </details>
-                    <details>
-                        <summary class="u-ns">Dictionary</summary>
-                        <p>Usage: <code>.define grass</code>.</p>
-                        <p>This provides the dictionary definition for any word you query.</p>
-                    </details>
-            </section>
-    
-            <section class="card">
-                <h3 class="ug-blue" id="listeners">Listeners</h3>
-                    <details>
-                        <summary class="u-ns">GitHub module</summary>
-                        <p>This module sends embeds for repository, pull request, and issue links.</p>
-                    </details>
-                    <details>
-                        <summary class="u-ns">Starboard module</summary>
-                        <p>Any message reacted with four or more of any reaction will get sent to the starboard channel.</p>
-                    </details>
-                    <details>
-                        <summary class="u-ns">Trigger response module</summary>
-                        <p>Set triggers that the bot will respond to, with up to 30 per server. To get started type <code>.help trigger add</code>.</p>
-                    </details>
-            </section>
-    
-            <section class="card" id="minecraft">
-                <h3 class="ug-mauve">Minecraft Things</h3>
-                    <details>
-                        <summary class="u-ns">Minecraft Server Status</summary>
-                        <p>Usage: <code>mcstatus mc.orangc.xyz</code>.</p>
-                        <p>Fetches the status of a Minecraft server.</p>
-                    </details>
-                    <details>
-                        <summary class="u-ns">Skin Fetcher</summary>
-                        <p>Usage: <code>mcskin orangci</code>.</p>
-                        <p>Fetches and displays a Minecraft user's skin.</p>
-                    </details>
-                    <details>
-                        <summary class="u-ns">Wynncraft module</summary>
-                        <p>Usage: <code>wynn player orangci</code> or <code>wynn guild Lawful Good</code>.</p>
-                        <p>Fetches and displays information about a Wynncraft player or guild in a neat little embed.</p>
-                    </details>
-            </section>
-       </section>
-
+    <header class="mb-4">
+        <div class="flex justify-center my-2">
+            <img src="https://cdn.discordapp.com/avatars/1287074090783604797/74b52e03b8de639d95262a885b94ae98.webp?size=60" alt="takina's avatar" id="avatar" class="mx-4 rounded-full size-12">
+            <span class="text-3xl align-middle text-cpeach">Takina</span>
+        </div>
+        <i><aside class="text-center">Fun fact: Takina is named after <a href="https://myanimelist.net/character/204620/Takina_Inoue">Takina Inoue</a> from <a href="https://myanimelist.net/anime/50709/Lycoris_Recoil">Lycoris Recoil</a>.</aside></i>
+        <p class="block text-center">A simple multipurpose bot for Discord written in Python with the Nextcord library. You can join our Discord server <a href="https://discord.gg/a4Wa2Z6Jv2" class="link2"> here</a>.</p>
         <br>
-        <footer class="text-center">
-            <a href="https://raw.githubusercontent.com/orangci/takina/refs/heads/main/LICENSE">Copyright</a>
-            <a href="https://orangc.xyz" class="link2">orangc</a> 2024 — Present.
-        </footer>
+        <div class="text-sm text-center sm:text-base">
+            <a href="https://discord.com/oauth2/authorize?client_id=1287074090783604797" class="btnp">Invite Takina</a>
+            <a href="http://github.com/orangci/takina" class="btnp">View Source Code</a>
+        </div>
+    </header>
+
+    <section class="pt-4 my-12 border-t-2 border-cpeach">
+        <h3 class="ug-red" id="weeb-utils">Weeb Utilities</h3>
+        <i><aside>Takina uses the <a href="https://jikan.moe/"> Jikan</a> API for this module.</aside></i>
+            <div class="grid gap-4 py-2 md:grid-cols-2 lg:grid-cols-3">
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">Anime searching</h4>
+                    <p>Usage: <code>.anime Lycoris Recoil</code>.</p>
+                </div>
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">Manga searching</h4>
+                    <p>Usage: <code>.manga Lycoris Recoil</code>.</p>
+                </div>
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">Character searching</h4>
+                    <p>Usage: <code>.chr Takina Inoue</code>.</p>
+                </div>
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">MyAnimeList user profiles</h4>
+                    <p>Usage: <code>.mal orangc</code>.</p>
+                </div>
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">MyAnimeList user statistics</h4>
+                    <p>Usage: <code>.malstats anime orangc</code> or <code>.malstats manga orangc</code>.</p>
+                </div>
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">Seasonal anime</h4>
+                    <p>Usage: <code>.season Summer 2022</code>.</p>
+                </div>
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">Anime/manga synopsis commands</h4>
+                    <p>Usage: <code>.anisyn Lycoris Recoil</code> and <code>.mangasyn Lycoris Recoil</code>.</p>
+                </div>
+            </div>
     </section>
+
+    <section class="pt-4 my-12 border-t-2 border-cpeach">
+        <h3 class="ug-peach" id="utility">Utility</h3>
+            <div class="grid gap-4 py-2 md:grid-cols-2 lg:grid-cols-3">
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">Giveaway module</h4>
+                    <p>Usage: <code>/giveaway</code>.</p>
+                    <p>An intuitive and simple to use module for managing giveaways.</p>
+                </div>
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">Embed builder</h4>
+                    <p>Usage: <code>/embed</code>.</p>
+                </div>
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">Remindme module</h4>
+                    <p>Usage: <code>remindme 10m watch lycoris recoil</code>.</p>
+                </div>
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">Role management</h4>
+                    <p>Usage: <code>.role add role user</code>, <code>.role remove role user</code>.</p>
+                </div>
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">Channel management</h4>
+                    <p>Usage: <code>.slowmode seconds/minutes/hours</code>, <code>.lock</code>, <code>.unlock</code>.</p>
+                </div>
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">Information module</h4>
+                    <p>Usage: <code>.userinfo user</code>, <code>.serverinfo</code>, <code>.roleinfo role</code>.</p>
+                </div>
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">Guild member count and user join positions</h4>
+                    <p>Usage: <code>.mc</code>, <code>.jp user</code>.</p>
+                </div>
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">AFK module</h4>
+                    <p>Usage: <code>.afk reason</code>.</p>
+                </div>
+            </div>
+    </section>
+
+    <section class="pt-4 my-12 border-t-2 border-cpeach">
+        <h3 class="ug-yellow" id="moderation">Moderation</h3>
+            <div class="grid gap-4 py-2 md:grid-cols-2 lg:grid-cols-3">
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">Reports system</h4>
+                    <p>Usage: <code>/report user reason</code>.</p>
+                    <p>This module will only work if a reports channel is set with <code>/admin_report</code>.</p>
+                </div>
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">Ban/unban</h4>
+                    <p>Usage: <code>.ban user</code>, <code>.unban user_id</code>.</p>
+                </div>
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">Mute/unmute</h4>
+                    <p>Usage: <code>.mute user duration reason</code>, <code>.unmute user reason</code>.</p>
+                </div>
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">Warnings</h4>
+                    <p>Usage: <code>.warn user reason</code>.</p>
+                </div>
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">Kick</h4>
+                    <p>Usage: <code>.kick user reason</code>.</p>
+                </div>
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">Nickname changing</h4>
+                    <p>Usage: <code>.setnick user new_nickname</code>.</p>
+                </div>
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">Message purging</h4>
+                    <p>Usage: <code>.purge 42</code>.</p>
+                    <p>The maximum number of messages you can purge is 100. You can also purge a specific user with <code>purge user orangc 11</code> or bots with <code>purge bots 17</code>.</p>
+                </div>
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">Logging, casing, and moderation statistics system</h4>
+                    <p>Logs bans/unbans, mutes/unmutes, and kicks. If a modlog channel is set with <code>/modlog channel</code>.
+                    Also <code>.case caseID</code>, <code>.cases user</code>, <code>.modcases user</code>, and <code>modstats user</code>.</p>
+                </div>
+            </div>
+    </section>
+
+    <section class="pt-4 my-12 border-t-2 border-cpeach">
+        <h3 class="ug-green" id="fun">Fun</h3>
+            <div class="grid gap-4 py-2 md:grid-cols-2 lg:grid-cols-3">
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">Random fact fetching</h4>
+                    <i><aside>Takina uses the <a href="https://uselessfacts.jsph.pl/api/v2/facts/random">uselessfacts</a> API for this.</aside></i>
+                    <p>Usage: <code>.fact</code>.</p>
+                </div>
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">Random joke</h4>
+                    <i><aside>Takina uses both the <a href="https://icanhazdadjoke.com">icanhazdadjoke</a> API and <a href="http://jokeapi.dev">jokeapi</a> for this.</aside></i>
+                    <p>Usage: <code>.joke</code>.</p>
+                </div>
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">User avatar fetching</h4>
+                    <p>Usage: <code>.avatar user</code>.</p>
+                </div>
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">Nekos</h4>
+                    <i><aside>Takina uses the <a href="https://nekos.best/">nekos.best</a> API for theses.</aside></i>
+                    <p>Usage: <code>.hug</code>, <code>.shrug</code>, <code>.bonk</code>, <code>.yeet</code>, and many more.</p>
+                </div>
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">Google</h4>
+                    <p>Usage: <code>.google search_term</code>.</p>
+                </div>
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">Roll</h4>
+                    <p>Usage: <code>.roll</code>.</p>
+                    <p>This will roll a random number between 1-100.</p>
+                </div>
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">Topic</h4>
+                    <i><aside>The topics for this were taken from YAGPDB.</aside></i>
+                    <p>Usage: <code>.topic</code>.</p>
+                </div>
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">Urban dictionary searching</h4>
+                    <p>Usage: <code>.ubdict term</code>.</p>
+                </div>
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">8ball</h4>
+                    <p>Usage: <code>.8ball question</code>.</p>
+                </div>
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">Snipe</h4>
+                    <p>Usage: <code>.snipe</code>.</p>
+                    <p>This snipes and sends the last deleted message in the channel.</p>
+                </div>
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">Dictionary</h4>
+                    <p>Usage: <code>.define grass</code>.</p>
+                    <p>This provides the dictionary definition for any word you query.</p>
+                </div>
+            </div>
+    </section>
+
+    <section class="pt-4 my-12 border-t-2 border-cpeach">
+        <h3 class="ug-blue" id="listeners">Listeners</h3>
+            <div class="grid gap-4 py-2 md:grid-cols-2 lg:grid-cols-3">
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">GitHub module</h4>
+                    <p>This module sends embeds for repository, pull request, and issue links.</p>
+                </div>
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">Starboard module</h4>
+                    <p>Any message reacted with four or more of any reaction will get sent to the starboard channel.</p>
+                </div>
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">Trigger response module</h4>
+                    <p>Set triggers that the bot will respond to, with up to 30 per server. To get started type <code>.help trigger add</code>.</p>
+                </div>
+            </div>
+    </section>
+
+    <section class="pt-4 my-12 border-t-2 border-cpeach">
+        <h3 class="ug-mauve">Minecraft Things</h3>
+            <div class="grid gap-4 py-2 md:grid-cols-2 lg:grid-cols-3">
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">Minecraft Server Status</h4>
+                    <p>Usage: <code>mcstatus mc.orangc.xyz</code>.</p>
+                    <p>Fetches the status of a Minecraft server.</p>
+                </div>
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">Skin Fetcher</h4>
+                    <p>Usage: <code>mcskin orangci</code>.</p>
+                    <p>Fetches and displays a Minecraft user's skin.</p>
+                </div>
+                <div class="card-takina">
+                    <h4 class="text-large u-ns">Wynncraft module</h4>
+                    <p>Usage: <code>wynn player orangci</code> or <code>wynn guild Lawful Good</code>.</p>
+                    <p>Fetches and displays information about a Wynncraft player or guild in a neat little embed.</p>
+                </div>
+            </div>
+    </section>
+
+
+    <br>
+    <footer class="text-center">
+        <a href="https://raw.githubusercontent.com/orangci/takina/refs/heads/main/LICENSE">Copyright</a>
+        <a href="https://orangc.xyz" class="link2">orangc</a> 2024 — Present.
+    </footer>
 
 </body>
 
