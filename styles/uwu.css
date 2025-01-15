@@ -948,6 +948,11 @@ video {
   color: transparent;
 }
 
+.text-csky {
+  --tw-text-opacity: 1;
+  color: rgb(137 220 235 / var(--tw-text-opacity, 1));
+}
+
 .underline {
   text-decoration-line: underline;
 }
