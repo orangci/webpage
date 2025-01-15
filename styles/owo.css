@@ -97,3 +97,7 @@ ol { @apply list-inside text-left list-roman; }
 ul { @apply list-disc list-inside text-left; }
 ul ul, ul ol, ol ul, ol ol { @apply pl-8; }
 li * { @apply inline; }
+
+/* Quotes
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+blockquote {@apply pl-4 border-l-4 text-cgreen border-cgreen; }

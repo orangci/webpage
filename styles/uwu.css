@@ -554,6 +554,10 @@ video {
   display: none;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .relative {
   position: relative;
 }
@@ -590,11 +594,6 @@ video {
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-}
-
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .mb-0 {
@@ -641,20 +640,12 @@ video {
   margin-top: 2rem;
 }
 
-.mt-\[40vh\] {
-  margin-top: 40vh;
-}
-
-.mt-\[50vh\] {
-  margin-top: 50vh;
-}
-
-.mt-\[25vh\] {
-  margin-top: 25vh;
-}
-
 .mt-\[30vh\] {
   margin-top: 30vh;
+}
+
+.mt-\[40vh\] {
+  margin-top: 40vh;
 }
 
 .block {
@@ -671,6 +662,10 @@ video {
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
 }
 
 .size-12 {
@@ -696,20 +691,16 @@ video {
   max-width: 48rem;
 }
 
+.max-w-4xl {
+  max-width: 56rem;
+}
+
 .max-w-6xl {
   max-width: 72rem;
 }
 
 .max-w-xl {
   max-width: 36rem;
-}
-
-.max-w-4 {
-  max-width: 1rem;
-}
-
-.max-w-4xl {
-  max-width: 56rem;
 }
 
 .select-none {
@@ -758,10 +749,6 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
-}
-
-.border {
-  border-width: 1px;
 }
 
 .border-b-2 {
@@ -907,9 +894,24 @@ video {
   color: rgb(30 30 46 / var(--tw-text-opacity, 1));
 }
 
+.text-cblue {
+  --tw-text-opacity: 1;
+  color: rgb(137 180 250 / var(--tw-text-opacity, 1));
+}
+
 .text-ccrust {
   --tw-text-opacity: 1;
   color: rgb(17 17 27 / var(--tw-text-opacity, 1));
+}
+
+.text-cgreen {
+  --tw-text-opacity: 1;
+  color: rgb(166 227 161 / var(--tw-text-opacity, 1));
+}
+
+.text-clavender {
+  --tw-text-opacity: 1;
+  color: rgb(180 190 254 / var(--tw-text-opacity, 1));
 }
 
 .text-cmauve {
@@ -922,9 +924,24 @@ video {
   color: rgb(250 179 135 / var(--tw-text-opacity, 1));
 }
 
+.text-cpink {
+  --tw-text-opacity: 1;
+  color: rgb(245 194 231 / var(--tw-text-opacity, 1));
+}
+
 .text-cred {
   --tw-text-opacity: 1;
   color: rgb(243 139 168 / var(--tw-text-opacity, 1));
+}
+
+.text-cteal {
+  --tw-text-opacity: 1;
+  color: rgb(148 226 213 / var(--tw-text-opacity, 1));
+}
+
+.text-cyellow {
+  --tw-text-opacity: 1;
+  color: rgb(249 226 175 / var(--tw-text-opacity, 1));
 }
 
 .text-transparent {
@@ -1459,6 +1476,18 @@ ul ul, ul ol, ol ul, ol ol {
 
 li * {
   display: inline;
+}
+
+/* Quotes
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+blockquote {
+  border-left-width: 4px;
+  --tw-border-opacity: 1;
+  border-color: rgb(166 227 161 / var(--tw-border-opacity, 1));
+  padding-left: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(166 227 161 / var(--tw-text-opacity, 1));
 }
 
 .hover\:text-cpeach:hover {
