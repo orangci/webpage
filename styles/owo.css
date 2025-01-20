@@ -88,7 +88,7 @@ h6 { @apply py-1 text-xl; }
 
 /* Animations
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.anim-enlarge { @apply transition ease-in-out delay-75 hover:scale-110; }
+.anim-enlarge { @apply transition ease-in-out delay-75 hover:scale-120; }
 
 
 /* Lists
@@ -100,4 +100,6 @@ li * { @apply inline; }
 
 /* Quotes
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-blockquote {@apply pl-4 border-l-4 text-cgreen border-cgreen; }
+blockquote { @apply pl-4 border-l-4 text-cgreen border-cgreen; }
+
+.social-link { @apply inline-block relative text-3xl anim-enlarge; }
