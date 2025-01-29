@@ -2,8 +2,6 @@
 const openModalBtn = document.getElementById('openLegalModalBtn');
 const modal = document.getElementById('legalModal');
 
-modal.classList.add('hidden');
-
 // Function to open the modal
 openModalBtn.addEventListener('click', () => {
   modal.classList.remove('hidden');
