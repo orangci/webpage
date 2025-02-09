@@ -566,6 +566,18 @@ video {
   inset: 0px;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
 .m-0 {
   margin: 0px;
 }
@@ -684,23 +696,6 @@ video {
 .size-8 {
   width: 2rem;
   height: 2rem;
-}
-
-.size-10 {
-  width: 2.5rem;
-  height: 2.5rem;
-}
-
-.h-12 {
-  height: 3rem;
-}
-
-.h-14 {
-  height: 3.5rem;
-}
-
-.h-10 {
-  height: 2.5rem;
 }
 
 .w-fit {
@@ -1585,6 +1580,10 @@ blockquote {
 
   .sm\:mt-\[40vh\] {
     margin-top: 40vh;
+  }
+
+  .sm\:block {
+    display: block;
   }
 
   .sm\:w-full {

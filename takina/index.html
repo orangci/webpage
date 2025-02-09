@@ -262,6 +262,26 @@
         </div>
         <script src="scripts/legal-modal.js"></script>
     </div>
+
+
+
+    <!-- Sakana Widget -->
+    <div id="sakana-widget" class="hidden fixed right-0 bottom-0 z-50 sm:block" aria-label="sakanaaa"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakana-widget@2.7.0/lib/sakana.min.css"/>
+    <script>
+    function initSakanaWidget() {
+        const takina = SakanaWidget.getCharacter('takina');
+        takina.initialState = {
+        ...takina.initialState,
+        i: 0.007,
+        d: 1,
+        r: 0
+        };
+        SakanaWidget.registerCharacter('takina-slow', takina);
+        new SakanaWidget({ character: 'takina-slow' }).mount('#sakana-widget');
+    }
+    </script>
+    <script async onload="initSakanaWidget()" src="https://cdn.jsdelivr.net/npm/sakana-widget@2.7.0/lib/sakana.min.js"></script>
 </body>
 
 </html>
