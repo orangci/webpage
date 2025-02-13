@@ -164,7 +164,8 @@
       <a href="https://nixwebr.ing/next/orangc" class="ug-sky">→</a>
       
       | It's <a href="./time" class="link2"><time id="myCurrentTime"></time></a> in my timezone
-      |<button id="openLegalModalBtn" class="px-2 m-0 link2">Legalese</button>
+      | <button id="openLegalModalBtn" class="m-0 link2">Legalese</button>
+      | <button id="openBadgeModalBtn" class="m-0 link2">Buttons</button>
     </p>
   </footer>
 
@@ -179,6 +180,30 @@
     <script src="scripts/legal-modal.js"></script>
   </div>
   
+  <!-- Funi Badges Modal -->
+  <div id="badgeModal" class="flex hidden fixed inset-0 justify-center items-center text-sm bg-opacity-50 bg-cbase">
+    <div class="relative p-6 w-full max-w-md rounded-lg shadow-xl bg-cmantle">
+      <h2 class="mb-4 text-lg font-semibold">Buttons</h2>
+      <p class="block my-2">More coming soon (maybe)!</p>
+      <!-- here begins the buttons -->
+      <div class="flex flex-wrap gap-4 justify-center">
+        <img src="assets/not-by-ai.svg" alt="No AI was used in developing this site!">
+        <img class="w-[88px] h-[31px]" src="assets/88x31/nix-rules.gif" alt="">
+        <img class="w-[88px] h-[31px]" src="assets/88x31/I-use-nix-by-the-way.gif" alt="" srcset="">
+        <img class="w-[88px] h-[31px]" src="assets/88x31/best-viewed-with-eyes.gif" alt="">
+        <img class="w-[88px] h-[31px]" src="assets/88x31/tested-on-firefox.gif" alt="">
+        <img class="w-[88px] h-[31px]" src="assets/88x31/ublock-origin-now.png" alt="">
+        <img class="w-[88px] h-[31px]" src="assets/88x31/warning-page-contains-javascript.gif" alt="">
+        <img class="w-[88px] h-[31px]" src="assets/88x31/best-viewed-on-desktop.gif" alt="">
+        <img class="w-[88px] h-[31px]" src="assets/88x31/blink-0.gif" alt="">
+        <img class="w-[88px] h-[31px]" src="assets/88x31/canadab.gif" alt="">
+        <img class="w-[88px] h-[31px]" src="assets/88x31/saudi.png" alt="">
+        <img class="w-[88px] h-[31px]" src="assets/88x31/cirno.png" alt="">
+      </div>
+      <!-- end buttons section -->
+    </div>
+    <script src="scripts/badge-modal.js"></script>
+  </div>
 
   <!-- Scripts -->
   <script src="scripts/discord-touhou.js"></script>
