@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
   socialLinks.forEach(link => {
     link.addEventListener('mouseover', function () {
       const newUsername = this.getAttribute('data-username');
-      const cirnoUsernames = ['discord', 'goodreads'];
+      const cirnoUsernames = ['discord', 'goodreads', 'myanimelist'];
       if (cirnoUsernames.includes(newUsername)) {
         usernameElement.innerHTML = `<img src="./assets/cirno.png" alt="pfp" class="self-center pl-0 mx-2 mb-0 ml-0 rounded-full size-12">orangc`;
       } else if (newUsername) {
