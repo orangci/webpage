@@ -5,7 +5,6 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ['Lexend, sans-serif'],
-      rale: ['Raleway, sans-serif'],
       serif: ['Merriweather, serif'],
       mono: ['"Martian Mono", monospace']
     },

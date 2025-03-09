@@ -982,6 +982,11 @@ video {
   color: rgb(180 190 254 / var(--tw-text-opacity, 1));
 }
 
+.text-cmaroon {
+  --tw-text-opacity: 1;
+  color: rgb(235 160 172 / var(--tw-text-opacity, 1));
+}
+
 .text-cmauve {
   --tw-text-opacity: 1;
   color: rgb(203 166 247 / var(--tw-text-opacity, 1));
