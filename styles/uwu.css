@@ -1012,6 +1012,11 @@ video {
   color: rgb(137 220 235 / var(--tw-text-opacity, 1));
 }
 
+.text-csubtext1 {
+  --tw-text-opacity: 1;
+  color: rgb(186 194 222 / var(--tw-text-opacity, 1));
+}
+
 .text-cteal {
   --tw-text-opacity: 1;
   color: rgb(148 226 213 / var(--tw-text-opacity, 1));
@@ -1024,10 +1029,6 @@ video {
 
 .text-transparent {
   color: transparent;
-}
-
-.underline {
-  text-decoration-line: underline;
 }
 
 .shadow-inner {
@@ -1462,7 +1463,6 @@ h6 {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .tooltip {
-  position: relative;
   display: inline-block;
 }
 
@@ -1515,11 +1515,6 @@ h6 {
   --tw-text-opacity: 1;
   color: rgb(205 214 244 / var(--tw-text-opacity, 1));
 }
-
-/* Unhide On Hover
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-/* to be done later */
 
 /* Animations
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
