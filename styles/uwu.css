@@ -566,18 +566,6 @@ video {
   inset: 0px;
 }
 
-.bottom-0 {
-  bottom: 0px;
-}
-
-.right-0 {
-  right: 0px;
-}
-
-.z-50 {
-  z-index: 50;
-}
-
 .m-0 {
   margin: 0px;
 }
@@ -591,19 +579,9 @@ video {
   margin-right: 0.5rem;
 }
 
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.my-12 {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
 }
 
 .my-2 {
@@ -678,10 +656,6 @@ video {
 
 .inline-flex {
   display: inline-flex;
-}
-
-.grid {
-  display: grid;
 }
 
 .hidden {
@@ -776,10 +750,6 @@ video {
   align-self: center;
 }
 
-.rounded-2xl {
-  border-radius: 1rem;
-}
-
 .rounded-full {
   border-radius: 9999px;
 }
@@ -803,11 +773,6 @@ video {
 .border-cmauve {
   --tw-border-opacity: 1;
   border-color: rgb(203 166 247 / var(--tw-border-opacity, 1));
-}
-
-.border-cpeach {
-  --tw-border-opacity: 1;
-  border-color: rgb(250 179 135 / var(--tw-border-opacity, 1));
 }
 
 .bg-cbase {
@@ -838,17 +803,8 @@ video {
   padding: 1rem;
 }
 
-.p-5 {
-  padding: 1.25rem;
-}
-
 .p-6 {
   padding: 1.5rem;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 
 .px-4 {
@@ -874,10 +830,6 @@ video {
   padding-top: 0px;
 }
 
-.pt-4 {
-  padding-top: 1rem;
-}
-
 .pt-6 {
   padding-top: 1.5rem;
 }
@@ -890,10 +842,6 @@ video {
   text-align: right;
 }
 
-.align-middle {
-  vertical-align: middle;
-}
-
 .font-mono {
   font-family: "Martian Mono", monospace;
 }
@@ -901,11 +849,6 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .text-4xl {
@@ -1011,11 +954,6 @@ video {
 .text-csubtext1 {
   --tw-text-opacity: 1;
   color: rgb(186 194 222 / var(--tw-text-opacity, 1));
-}
-
-.text-cteal {
-  --tw-text-opacity: 1;
-  color: rgb(148 226 213 / var(--tw-text-opacity, 1));
 }
 
 .text-cyellow {
@@ -1141,90 +1079,6 @@ video {
 
 .ug-lavender {
   background-image: linear-gradient(to top right, #b4befe, #7287FD);
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
-}
-
-.ug-text {
-  background-image: linear-gradient(to top right, #cdd6f4, #4C4F69);
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
-}
-
-.ug-subtext1 {
-  background-image: linear-gradient(to top right, #bac2de, #5C5F77);
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
-}
-
-.ug-subtext0 {
-  background-image: linear-gradient(to top right, #a6adc8, #6C6F85);
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
-}
-
-.ug-overlay2 {
-  background-image: linear-gradient(to top right, #9399b2, #7C7F93);
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
-}
-
-.ug-overlay1 {
-  background-image: linear-gradient(to top right, #7f849c, #8C8FA1);
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
-}
-
-.ug-overlay0 {
-  background-image: linear-gradient(to top right, #6c7086, #9CA0B0);
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
-}
-
-.ug-surface2 {
-  background-image: linear-gradient(to top right, #585b70, #ACB0BE);
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
-}
-
-.ug-surface1 {
-  background-image: linear-gradient(to top right, #45475a, #BCC0CC);
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
-}
-
-.ug-surface0 {
-  background-image: linear-gradient(to top right, #313244, #CCD0DA);
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
-}
-
-.ug-base {
-  background-image: linear-gradient(to top right, #1e1e2e, #EFF1F5);
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
-}
-
-.ug-mantle {
-  background-image: linear-gradient(to top right, #181825, #E6E9EF);
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
-}
-
-.ug-crust {
-  background-image: linear-gradient(to top right, #11111b, #DCE0E8);
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
@@ -1432,29 +1286,6 @@ h6 {
   }
 }
 
-.card-takina {
-  margin: 0.25rem;
-  border-radius: 1rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(24 24 37 / var(--tw-bg-opacity, 1));
-  padding: 1.25rem;
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  transition-property: box-shadow;
-  transition-property: transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 200ms;
-}
-
-.card-takina:hover {
-  --tw-translate-y: -0.25rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 /* Tooltips
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -1590,52 +1421,14 @@ blockquote {
 }
 
 @media (min-width: 640px) {
-  .sm\:mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .sm\:mt-\[40vh\] {
     margin-top: 40vh;
-  }
-
-  .sm\:block {
-    display: block;
-  }
-
-  .sm\:w-full {
-    width: 100%;
-  }
-
-  .sm\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .md\:mx-28 {
-    margin-left: 7rem;
-    margin-right: 7rem;
-  }
-
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (min-width: 1024px) {
-  .lg\:mx-\[12\.75rem\] {
-    margin-left: 12.75rem;
-    margin-right: 12.75rem;
-  }
-
   .lg\:flex {
     display: flex;
-  }
-
-  .lg\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:justify-between {

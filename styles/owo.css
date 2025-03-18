@@ -21,18 +21,6 @@
 .ug-sapphire { @apply text-transparent bg-clip-text bg-ug-sapphire; }
 .ug-blue { @apply text-transparent bg-clip-text bg-ug-blue; }
 .ug-lavender { @apply text-transparent bg-clip-text bg-ug-lavender; }
-.ug-text { @apply text-transparent bg-clip-text bg-ug-text; }
-.ug-subtext1 { @apply text-transparent bg-clip-text bg-ug-subtext1; }
-.ug-subtext0 { @apply text-transparent bg-clip-text bg-ug-subtext0; }
-.ug-overlay2 { @apply text-transparent bg-clip-text bg-ug-overlay2; }
-.ug-overlay1 { @apply text-transparent bg-clip-text bg-ug-overlay1; }
-.ug-overlay0 { @apply text-transparent bg-clip-text bg-ug-overlay0; }
-.ug-surface2 { @apply text-transparent bg-clip-text bg-ug-surface2; }
-.ug-surface1 { @apply text-transparent bg-clip-text bg-ug-surface1; }
-.ug-surface0 { @apply text-transparent bg-clip-text bg-ug-surface0; }
-.ug-base { @apply text-transparent bg-clip-text bg-ug-base; }
-.ug-mantle { @apply text-transparent bg-clip-text bg-ug-mantle; }
-.ug-crust { @apply text-transparent bg-clip-text bg-ug-crust; }
 
 /* Base
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -70,7 +58,6 @@ h6 { @apply py-1 text-xl; }
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .cards { @apply flex flex-wrap gap-4; }
 .card { @apply p-5 m-2 w-full rounded-2xl shadow-md transition-shadow transition-transform duration-200 sm:w-1/2 md:w-1/3 lg:w-1/4 bg-cmantle hover:shadow-lg hover:transform hover:-translate-y-1; }
-.card-takina { @apply p-5 m-1 rounded-2xl shadow-md transition-shadow transition-transform duration-200 bg-cmantle hover:shadow-lg hover:transform hover:-translate-y-1;}
 
 /* Tooltips
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
