@@ -75,7 +75,7 @@ async function fetchMyAnimeListPfp(username) {
 
 async function fetchTwitterPfp(username) {
   try {
-    const response = await fetch(`https://unavatar.io/twitter/${username}`);
+    const response = await fetch(`https://unavatar.io/x/${username}`);
     if (!response.ok) throw new Error("Twitter avatar fetch failed");
     const data = await response.json();
     return data?.url || null;
