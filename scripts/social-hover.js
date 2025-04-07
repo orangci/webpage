@@ -11,12 +11,12 @@ const fallbackIcons = {
 };
 
 const dynamicSources = {
-  discord: () => FetchDiscordPfp('961063229168164864'),
-  github: () => fetchGitHubPfp('orangci'),
-  myanimelist: () => fetchMyAnimeListPfp('orangc'),
-  twitter: () => fetchTwitterPfp('orxngc'),
-  youtube: () => fetchYouTubePfp('@orangc'),
-  twitch: () => fetchTwitchPfp('orangci'),
+  discord: () => fetchDiscord('961063229168164864'),
+  github: () => fetchUnavatar('orangci'),
+  myanimelist: () => fetchMAL('orangc'),
+  twitter: () => fetchUnavatar('x/orxngc'),
+  youtube: () => fetchUnavatar('youtube/orangc'),
+  twitch: () => fetchUnavatar('twitch/orangci'),
 };
 
 const usernameToServiceKey = {
@@ -33,109 +33,61 @@ const usernameToServiceKey = {
   '@orangc:matrix.org': 'matrix',
 };
 
-const dynamicPfps = {};
-const loadingPromises = {};
+const dynamicPfps = {}, loadingPromises = {};
 
-async function FetchDiscordPfp(userId) {
+const display = (el, img, name) => {
+  el.innerHTML = `<img src="${img}" alt="pfp" class="self-center pl-0 mx-2 mb-0 ml-0 rounded-full size-12">${name}`;
+};
+
+const fetchDiscord = async id => {
   try {
-    const response = await fetch(`https://api.lanyard.rest/v1/users/${userId}`);
-    if (!response.ok) throw new Error("Lanyard API error");
-    const data = await response.json();
-    const avatar = data?.data?.discord_user?.avatar;
-    return avatar ? `https://cdn.discordapp.com/avatars/${userId}/${avatar}` : null;
-  } catch (error) {
-    console.error("Error fetching Discord pfp:", error);
+    const r = await fetch(`https://api.lanyard.rest/v1/users/${id}`);
+    const j = await r.json();
+    return j?.data?.discord_user?.avatar ? `https://cdn.discordapp.com/avatars/${id}/${j.data.discord_user.avatar}` : null;
+  } catch (e) {
+    console.error("Discord error:", e);
     return null;
   }
-}
+};
 
-async function fetchGitHubPfp(username) {
+const fetchMAL = async username => {
   try {
-    return`https://unavatar.io/${username}?ttl=12h`;
-  } catch (error) {
-    console.error("Error in fetching GitHub avatar:", error);
+    const r = await fetch(`https://api.jikan.moe/v4/users/${username}`);
+    const j = await r.json();
+    return j?.data?.images?.jpg?.image_url || null;
+  } catch (e) {
+    console.error("MAL error:", e);
     return null;
   }
-}
+};
 
-async function fetchMyAnimeListPfp(username) {
-  try {
-    const response = await fetch(`https://api.jikan.moe/v4/users/${username}`);
-    if (!response.ok) throw new Error("MAL API error");
-    const data = await response.json();
-    return data?.data?.images?.jpg?.image_url || null;
-  } catch (error) {
-    console.error("MyAnimeList error:", error);
-    return null;
-  }
-}
+const fetchUnavatar = async path => `https://unavatar.io/${path}?ttl=12h`;
 
-async function fetchTwitterPfp(username) {
-  try {
-    return `https://unavatar.io/x/${username}?ttl=12h`;
-  } catch (error) {
-    console.error("Error in fetching Twitter avatar:", error);
-    return null;
-  }
-}
+document.addEventListener('DOMContentLoaded', () => {
+  const usernameEl = document.getElementById('username');
+  const original = usernameEl.innerHTML;
 
-async function fetchYouTubePfp(username) {
-  try {
-    return `https://unavatar.io/youtube/${username}?ttl=12h`;
-  } catch (error) {
-    console.error("Error in fetching YouTube avatar:", error);
-    return null;
-  }
-}
+  document.querySelectorAll('.social-link').forEach(link => {
+    link.addEventListener('mouseover', async () => {
+      const username = link.getAttribute('data-username');
+      const key = usernameToServiceKey[username];
+      const fallback = fallbackIcons[key] || fallbackIcons.default;
+      const name = ['goodreads', 'myanimelist', 'discord'].includes(key) ? 'orangc' : username;
 
-async function fetchTwitchPfp(username) {
-  try {
-    return `https://unavatar.io/twitch/${username}?ttl=12h`;
-  } catch (error) {
-    console.error("Error in fetching Twitch avatar:", error);
-    return null;
-  }
-}
+      display(usernameEl, fallback, name);
 
-document.addEventListener('DOMContentLoaded', function () {
-  const usernameElement = document.getElementById('username');
-  const originalUsername = usernameElement.innerHTML;
-  const socialLinks = document.querySelectorAll('.social-link');
-
-  socialLinks.forEach(link => {
-    link.addEventListener('mouseover', function () {
-      const username = this.getAttribute('data-username');
-      const serviceKey = usernameToServiceKey[username];
-      const fallback = fallbackIcons[serviceKey] || fallbackIcons.default;
-
-      let displayName = username;
-      if (['goodreads', 'myanimelist', 'discord'].includes(serviceKey)) {
-        displayName = 'orangc';
-      }
-
-      // 1. Show fallback immediately
-      usernameElement.innerHTML = `<img src="${fallback}" alt="pfp" class="self-center pl-0 mx-2 mb-0 ml-0 rounded-full size-12">${displayName}`;
-
-      // 2. Start loading dynamic avatar if not already loaded/fetching
-      if (!dynamicPfps[serviceKey] && !loadingPromises[serviceKey] && dynamicSources[serviceKey]) {
-        loadingPromises[serviceKey] = dynamicSources[serviceKey]().then(pfp => {
-          dynamicPfps[serviceKey] = pfp || fallback;
-
-          // 3. If user is still hovering, update to dynamic pfp
-          if (usernameElement.innerText === displayName) {
-            usernameElement.innerHTML = `<img src="${dynamicPfps[serviceKey]}" alt="pfp" class="self-center pl-0 mx-2 mb-0 ml-0 rounded-full size-12">${displayName}`;
-          }
+      if (dynamicPfps[key]) {
+        display(usernameEl, dynamicPfps[key], name);
+      } else if (!loadingPromises[key] && dynamicSources[key]) {
+        loadingPromises[key] = dynamicSources[key]().then(pfp => {
+          dynamicPfps[key] = pfp || fallback;
+          if (usernameEl.innerText === name) display(usernameEl, dynamicPfps[key], name);
         });
-      }
-
-      // 3b. If it's already cached, show it immediately
-      if (dynamicPfps[serviceKey]) {
-        usernameElement.innerHTML = `<img src="${dynamicPfps[serviceKey]}" alt="pfp" class="self-center pl-0 mx-2 mb-0 ml-0 rounded-full size-12">${displayName}`;
       }
     });
 
-    link.addEventListener('mouseout', function () {
-      usernameElement.innerHTML = originalUsername;
+    link.addEventListener('mouseout', () => {
+      usernameEl.innerHTML = original;
     });
   });
 });
