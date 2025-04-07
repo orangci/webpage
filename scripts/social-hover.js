@@ -51,7 +51,7 @@ async function FetchDiscordPfp(userId) {
 
 async function fetchGitHubPfp(username) {
   try {
-    const response = await fetch(`https://unavatar.io/${username}`);
+    const response = await fetch(`https://unavatar.io/${username}?ttl=12h`);
     if (!response.ok) throw new Error("GitHub avatar fetch failed");
     const data = await response.json();
     return data?.url || null;
@@ -75,7 +75,7 @@ async function fetchMyAnimeListPfp(username) {
 
 async function fetchTwitterPfp(username) {
   try {
-    const response = await fetch(`https://unavatar.io/x/${username}`);
+    const response = await fetch(`https://unavatar.io/x/${username}?ttl=12h`);
     if (!response.ok) throw new Error("Twitter avatar fetch failed");
     const data = await response.json();
     return data?.url || null;
@@ -87,7 +87,7 @@ async function fetchTwitterPfp(username) {
 
 async function fetchYouTubePfp(username) {
   try {
-    const response = await fetch(`https://unavatar.io/youtube/${username}`);
+    const response = await fetch(`https://unavatar.io/youtube/${username}?ttl=12h`);
     if (!response.ok) throw new Error("YouTube avatar fetch failed");
     const data = await response.json();
     return data?.url || null;
@@ -99,7 +99,7 @@ async function fetchYouTubePfp(username) {
 
 async function fetchTwitchPfp(username) {
   try {
-    const response = await fetch(`https://unavatar.io/twitch/${username}`);
+    const response = await fetch(`https://unavatar.io/twitch/${username}?ttl=12h`);
     if (!response.ok) throw new Error("Twitch avatar fetch failed");
     const data = await response.json();
     return data?.url || null;
