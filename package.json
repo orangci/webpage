@@ -1,7 +1,6 @@
 {
   "name": "webpagc",
   "version": "0.1.0",
-  "type": "module",
   "description": "A brief description of your package",
   "dependencies": {
     "flyonui": "^2.1.0",
