@@ -15,7 +15,7 @@
     "tailwindcss-motion": "^1.1.0"
   },
   "scripts": {
-    "build": "npm install @iconify-json/fa6-brands @iconify-json/tabler --save-dev && npm i && npx @tailwindcss/cli -i styles/input.css -o styles/output.css",
+    "build": "npm i && npx @tailwindcss/cli -i styles/input.css -o styles/output.css",
     "dev": "npx @tailwindcss/cli -i styles/input.css -o styles/output.css --watch"
   }
 }
