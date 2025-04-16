@@ -1,15 +1,3 @@
-const fallbackIcons = {
-  default: './assets/leaf-small.png',
-  discord: './assets/cirno.png',
-  github: './assets/leaf-small.png',
-  myanimelist: './assets/cirno.png',
-  twitter: './assets/leaf-small.png',
-  youtube: './assets/leaf-small.png',
-  twitch: './assets/leaf-small.png',
-  mastodon: './assets/leaf-small.png',
-  cirno: './assets/cirno.png',
-};
-
 const dynamicSources = {
   discord: () => fetchDiscord('961063229168164864'),
   github: () => fetchUnavatar('orangci'),
@@ -33,61 +21,57 @@ const usernameToServiceKey = {
   '@orangc:matrix.org': 'matrix',
 };
 
-const dynamicPfps = {}, loadingPromises = {};
-
-const display = (el, img, name) => {
-  el.innerHTML = `<img src="${img}" alt="pfp" class="self-center pl-0 mx-2 mb-0 ml-0 rounded-full size-12">${name}`;
-};
+const displayNameOverrides = new Set(['discord', 'myanimelist', 'goodreads']);
+const dynamicCache = {};
 
 const fetchDiscord = async id => {
-  try {
-    const r = await fetch(`https://api.lanyard.rest/v1/users/${id}`);
-    const j = await r.json();
-    return j?.data?.discord_user?.avatar ? `https://cdn.discordapp.com/avatars/${id}/${j.data.discord_user.avatar}` : null;
-  } catch (e) {
-    console.error("Discord error:", e);
-    return null;
-  }
+  const res = await fetch(`https://api.lanyard.rest/v1/users/${id}`);
+  const data = await res.json();
+  return data?.data?.discord_user?.avatar
+    ? `https://cdn.discordapp.com/avatars/${id}/${data.data.discord_user.avatar}`
+    : null;
 };
 
 const fetchMAL = async username => {
-  try {
-    const r = await fetch(`https://api.jikan.moe/v4/users/${username}`);
-    const j = await r.json();
-    return j?.data?.images?.jpg?.image_url || null;
-  } catch (e) {
-    console.error("MAL error:", e);
-    return null;
-  }
+  const res = await fetch(`https://api.jikan.moe/v4/users/${username}`);
+  const data = await res.json();
+  return data?.data?.images?.jpg?.image_url || null;
 };
 
 const fetchUnavatar = async path => `https://unavatar.io/${path}?ttl=12h`;
 
 document.addEventListener('DOMContentLoaded', () => {
   const usernameEl = document.getElementById('username');
-  const original = usernameEl.innerHTML;
+  const avatarImg = document.getElementById('dynamicPFP');
+  const originalText = usernameEl.textContent;
+  const originalImg = avatarImg?.src;
 
   document.querySelectorAll('.social-link').forEach(link => {
     link.addEventListener('mouseover', async () => {
       const username = link.getAttribute('data-username');
       const key = usernameToServiceKey[username];
-      const fallback = fallbackIcons[key] || fallbackIcons.default;
-      const name = ['goodreads', 'myanimelist', 'discord'].includes(key) ? 'orangc' : username;
+      const displayName = displayNameOverrides.has(key) ? 'orangc' : username;
+      usernameEl.textContent = displayName;
 
-      display(usernameEl, fallback, name);
+      if (!key || !dynamicSources[key]) return;
 
-      if (dynamicPfps[key]) {
-        display(usernameEl, dynamicPfps[key], name);
-      } else if (!loadingPromises[key] && dynamicSources[key]) {
-        loadingPromises[key] = dynamicSources[key]().then(pfp => {
-          dynamicPfps[key] = pfp || fallback;
-          if (usernameEl.innerText === name) display(usernameEl, dynamicPfps[key], name);
-        });
+      if (!dynamicCache[key]) {
+        try {
+          dynamicCache[key] = await dynamicSources[key]() || "./leaf.png";
+        } catch {
+          dynamicCache[key] = "./leaf.png";
+        }
+      }
+
+      if (avatarImg) {
+        avatarImg.src = dynamicCache[key];
+        avatarImg.alt = `${displayName} profile picture`;
       }
     });
 
     link.addEventListener('mouseout', () => {
-      usernameEl.innerHTML = original;
+      usernameEl.textContent = originalText;
+      if (avatarImg) avatarImg.src = originalImg;
     });
   });
 });

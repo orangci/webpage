@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="catppuccin">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,12 +15,11 @@
     
     <title>orangc</title>
     <link rel="shortcut icon" href="leaf.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="../styles/uwu.css" />
-    <script src="https://kit.fontawesome.com/d18c7751b3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/output.css" />
 </head>
 
 <body class="justify-center items-center m-auto text-center">
-    <h1 class="font-extrabold mt-[40vh] select-none"><i class="fas fa-link"></i> Redirecting...</h1>
+    <h1 class="font-extrabold mt-[40vh] select-none text-4xl"><span class="icon-[tabler--link] size-10 -mb-2"></span> Redirecting...</h1>
     <script>
         setTimeout(function() {
             const element = document.getElementById('manualLink');
@@ -29,6 +28,15 @@
         }, 2000);
     </script>
     <aside id="manualLink" class="hidden">Did this page fail to redirect? Click <a href="https://nohello.orangc.net" class="link2">here</a> for a manual redirect.</aside>
+    <script>
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme) {
+          document.documentElement.setAttribute("data-theme", savedTheme);
+          if (savedTheme === "light" || savedTheme === "rosepine") {
+            document.body.classList.add("font-serif");
+          }
+        }
+      </script>
 </body>
 
 </html>

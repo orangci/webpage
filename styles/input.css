@@ -1,0 +1,146 @@
+@import "tailwindcss";
+@plugin "@iconify/tailwind4";
+@plugin "flyonui";
+@source "../node_modules/flyonui/dist/index.js";
+@import "tailwindcss-intersect";
+@plugin "tailwindcss-motion";
+@import url(https://fonts.bunny.net/css?family=lexend:500|martian-mono:500|merriweather:700);
+
+@theme {
+  /* fonts */
+  --font-sans: "Lexend", "sans-serif";
+  --font-serif: "Merriweather", "serif";
+  --font-mono: "Martian Mono", "monospace";
+}
+
+@plugin "flyonui/theme" {
+  name: "catppuccin";
+  default: false;
+  color-scheme: "catppuccin";
+
+  --color-base-100: #1e1e2e;
+  --color-base-200: #181825;
+  --color-base-300: #11111b;
+  --color-base-content: #cdd6f4;
+  --color-primary: #cba6f7;
+  --color-primary-content: cdd6f4;
+  --color-secondary: #94e2d5;
+  --color-secondary-content: #1e1e2e;
+  --color-accent: #fab387;
+  --color-accent-content: #1e1e2e;
+  --color-neutral: #a6e3a1;
+  --color-neutral-content: #1e1e2e;
+  --color-info: #89dceb;
+  --color-info-content: #1e1e2e;
+  --color-success: #a6e3a1;
+  --color-success-content: #1e1e2e;
+  --color-warning: #f9e2af;
+  --color-warning-content: #1e1e2e;
+  --color-error: #f38ba8;
+  --color-error-content: #1e1e2e;
+
+  --radius-selector: 1rem;
+  --radius-field: 1rem;
+  --radius-box: 1rem;
+  --size-selector: 0.21875rem;
+  --size-field: 0.21875rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 1;
+}
+
+@plugin "flyonui/theme" {
+  name: "rosepine";
+  default: false;
+  color-scheme: "rosepine";
+
+  --color-base-100: #191724;
+  --color-base-200: #1f1d2e;
+  --color-base-300: #26233a;
+  --color-base-content: #e0def4;
+  --color-primary: #ebbcba;
+  --color-primary-content: #26233a;
+  --color-secondary: #31748f;
+  --color-secondary-content: #e0def4;
+  --color-accent: #f6c177;
+  --color-accent-content: #26233a;
+  --color-neutral: #9ccfd8;
+  --color-neutral-content: #26233a;
+  --color-info: #c4a7e7;
+  --color-info-content: #26233a;
+  --color-success: #31748f;
+  --color-success-content: #e0def4;
+  --color-warning: #f6c177;
+  --color-warning-content: #26233a;
+  --color-error: #eb6f92;
+  --color-error-content: #26233a;
+
+  --radius-selector: 1rem;
+  --radius-field: 1rem;
+  --radius-box: 1rem;
+  --size-selector: 0.21875rem;
+  --size-field: 0.21875rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 1;
+}
+
+@plugin "flyonui/theme" {
+  name: "light";
+  default: false;
+  color-scheme: "light";
+
+  --color-base-100: #eee;
+  --color-base-200: #ddd;
+  --color-base-300: #eef;
+  --color-base-content: #444;
+  --color-primary: #444;
+  --color-primary-content: #eee;
+  --color-secondary: #444;
+  --color-secondary-content: #eee;
+  --color-accent: #209fb5;
+  --color-accent-content: #eee;
+  --color-neutral: #444;
+  --color-neutral-content: #eee;
+  --color-info: #444;
+  --color-info-content: #eee;
+  --color-success: #40a02b;
+  --color-success-content: #eee;
+  --color-warning: #df8e1d;
+  --color-warning-content: #eee;
+  --color-error: #d20f39;
+  --color-error-content: #eee;
+
+  --radius-selector: 0rem;
+  --radius-field: 0rem;
+  --radius-box: 0rem;
+  --size-selector: 0.21875rem;
+  --size-field: 0.21875rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 1;
+}
+
+/* Base
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+body {@apply p-3 text-lg bg-base-100 text-base-content;}
+b, strong { @apply font-bold; }
+i, em { @apply italic; }
+code { @apply p-1 m-1 font-mono rounded-lg bg-base-100; }
+img { @apply select-none; }
+hr { @apply border-base-content; }
+p { @apply inline; }
+fieldset { @apply p-3 rounded-lg border-2 border-accent; }
+legend { @apply px-1; }
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.link3 { @apply inline-block relative border-b-0 border-accent; }
+.link3::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-0 h-[2px] bg-accent transition-all duration-300;
+}
+.link3:hover::after { @apply w-full; }
+.link2 { @apply inline-block relative underline decoration-accent decoration-2 hover:no-underline; }
+
+.social-link { @apply inline-block relative text-3xl transition ease-in-out delay-75 hover:scale-110; }
