@@ -32,7 +32,7 @@
                 const utc3 = new Date(now.getTime() + offset * 60 * 60 * 1000);
                 const formattedTime = utc3.toISOString().slice(11, 19); // HH:mm:ss format
                 currentTimeElement.innerHTML = `
-                    ${formattedTime} <span class="text-error">AST</span>
+                    ${formattedTime} <span class="text-error">UTC+3</span>
                 `;
                 currentTimeElement.setAttribute("datetime", utc3.toISOString());
             }
